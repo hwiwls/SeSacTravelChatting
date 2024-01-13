@@ -15,6 +15,13 @@
 		2E12C8272B52CD3B002F99DC /* ChattingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C8262B52CD3B002F99DC /* ChattingListViewController.swift */; };
 		2E12C82A2B52CD4D002F99DC /* ChattingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C8282B52CD4D002F99DC /* ChattingListTableViewCell.swift */; };
 		2E12C82B2B52CD4D002F99DC /* ChattingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C8292B52CD4D002F99DC /* ChattingListTableViewCell.xib */; };
+		2E12C82D2B52F5D9002F99DC /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C82C2B52F5D9002F99DC /* ChattingViewController.swift */; };
+		2E12C8332B52F723002F99DC /* SenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C8312B52F723002F99DC /* SenderTableViewCell.swift */; };
+		2E12C8342B52F723002F99DC /* SenderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C8322B52F723002F99DC /* SenderTableViewCell.xib */; };
+		2E12C83B2B52FA05002F99DC /* RecieverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C8392B52FA05002F99DC /* RecieverTableViewCell.swift */; };
+		2E12C83C2B52FA05002F99DC /* RecieverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C83A2B52FA05002F99DC /* RecieverTableViewCell.xib */; };
+		2E12C83F2B52FA2E002F99DC /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C83E2B52FA2E002F99DC /* Input.swift */; };
+		2E12C8412B52FA7B002F99DC /* mockupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C8402B52FA7B002F99DC /* mockupData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		2E12C8262B52CD3B002F99DC /* ChattingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingListViewController.swift; sourceTree = "<group>"; };
 		2E12C8282B52CD4D002F99DC /* ChattingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingListTableViewCell.swift; sourceTree = "<group>"; };
 		2E12C8292B52CD4D002F99DC /* ChattingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingListTableViewCell.xib; sourceTree = "<group>"; };
+		2E12C82C2B52F5D9002F99DC /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		2E12C8312B52F723002F99DC /* SenderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTableViewCell.swift; sourceTree = "<group>"; };
+		2E12C8322B52F723002F99DC /* SenderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderTableViewCell.xib; sourceTree = "<group>"; };
+		2E12C8392B52FA05002F99DC /* RecieverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieverTableViewCell.swift; sourceTree = "<group>"; };
+		2E12C83A2B52FA05002F99DC /* RecieverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecieverTableViewCell.xib; sourceTree = "<group>"; };
+		2E12C83E2B52FA2E002F99DC /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		2E12C8402B52FA7B002F99DC /* mockupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockupData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +76,13 @@
 			children = (
 				2E12C80F2B52C4DF002F99DC /* AppDelegate.swift */,
 				2E12C8112B52C4DF002F99DC /* SceneDelegate.swift */,
-				2E12C8232B52C50C002F99DC /* ViewController */,
-				2E12C8252B52C532002F99DC /* Cell */,
 				2E12C8152B52C4DF002F99DC /* Main.storyboard */,
+				2E12C82E2B52F700002F99DC /* Chatting */,
+				2E12C8252B52C532002F99DC /* ChattingList */,
+				2E12C83D2B52FA20002F99DC /* Data */,
 				2E12C8182B52C4E1002F99DC /* Assets.xcassets */,
 				2E12C81A2B52C4E1002F99DC /* LaunchScreen.storyboard */,
 				2E12C81D2B52C4E1002F99DC /* Info.plist */,
-				2E12C8262B52CD3B002F99DC /* ChattingListViewController.swift */,
-				2E12C8282B52CD4D002F99DC /* ChattingListTableViewCell.swift */,
-				2E12C8292B52CD4D002F99DC /* ChattingListTableViewCell.xib */,
 			);
 			path = SeSacTravelChatting;
 			sourceTree = "<group>";
@@ -78,7 +90,7 @@
 		2E12C8232B52C50C002F99DC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2E12C8242B52C51B002F99DC /* Cell */,
+				2E12C8262B52CD3B002F99DC /* ChattingListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -86,15 +98,72 @@
 		2E12C8242B52C51B002F99DC /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				2E12C8292B52CD4D002F99DC /* ChattingListTableViewCell.xib */,
+				2E12C8282B52CD4D002F99DC /* ChattingListTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		2E12C8252B52C532002F99DC /* Cell */ = {
+		2E12C8252B52C532002F99DC /* ChattingList */ = {
 			isa = PBXGroup;
 			children = (
+				2E12C8232B52C50C002F99DC /* ViewController */,
+				2E12C8242B52C51B002F99DC /* Cell */,
+			);
+			path = ChattingList;
+			sourceTree = "<group>";
+		};
+		2E12C82E2B52F700002F99DC /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				2E12C8302B52F70E002F99DC /* ViewController */,
+				2E12C8352B52F893002F99DC /* Cell */,
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		2E12C82F2B52F708002F99DC /* SenderCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E12C8312B52F723002F99DC /* SenderTableViewCell.swift */,
+				2E12C8322B52F723002F99DC /* SenderTableViewCell.xib */,
+			);
+			path = SenderCell;
+			sourceTree = "<group>";
+		};
+		2E12C8302B52F70E002F99DC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E12C82C2B52F5D9002F99DC /* ChattingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2E12C8352B52F893002F99DC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2E12C8362B52F8A7002F99DC /* RecieverCell */,
+				2E12C82F2B52F708002F99DC /* SenderCell */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2E12C8362B52F8A7002F99DC /* RecieverCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E12C8392B52FA05002F99DC /* RecieverTableViewCell.swift */,
+				2E12C83A2B52FA05002F99DC /* RecieverTableViewCell.xib */,
+			);
+			path = RecieverCell;
+			sourceTree = "<group>";
+		};
+		2E12C83D2B52FA20002F99DC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2E12C83E2B52FA2E002F99DC /* Input.swift */,
+				2E12C8402B52FA7B002F99DC /* mockupData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +226,8 @@
 			files = (
 				2E12C81C2B52C4E1002F99DC /* LaunchScreen.storyboard in Resources */,
 				2E12C8192B52C4E1002F99DC /* Assets.xcassets in Resources */,
+				2E12C83C2B52FA05002F99DC /* RecieverTableViewCell.xib in Resources */,
+				2E12C8342B52F723002F99DC /* SenderTableViewCell.xib in Resources */,
 				2E12C8172B52C4DF002F99DC /* Main.storyboard in Resources */,
 				2E12C82B2B52CD4D002F99DC /* ChattingListTableViewCell.xib in Resources */,
 			);
@@ -169,10 +240,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E12C8412B52FA7B002F99DC /* mockupData.swift in Sources */,
+				2E12C83B2B52FA05002F99DC /* RecieverTableViewCell.swift in Sources */,
 				2E12C8102B52C4DF002F99DC /* AppDelegate.swift in Sources */,
+				2E12C82D2B52F5D9002F99DC /* ChattingViewController.swift in Sources */,
 				2E12C8272B52CD3B002F99DC /* ChattingListViewController.swift in Sources */,
+				2E12C8332B52F723002F99DC /* SenderTableViewCell.swift in Sources */,
 				2E12C8122B52C4DF002F99DC /* SceneDelegate.swift in Sources */,
 				2E12C82A2B52CD4D002F99DC /* ChattingListTableViewCell.swift in Sources */,
+				2E12C83F2B52FA2E002F99DC /* Input.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

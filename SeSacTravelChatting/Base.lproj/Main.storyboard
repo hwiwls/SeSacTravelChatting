@@ -63,15 +63,48 @@
             </objects>
             <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Chatting View Controller-->
         <scene sceneID="KXJ-rL-hgt">
             <objects>
-                <viewController id="5fC-Pp-5St" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChattingViewController" id="5fC-Pp-5St" customClass="ChattingViewController" customModule="SeSacTravelChatting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pVd-CE-uiF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bde-GQ-wVf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="729-Mi-3S2"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9d5-md-EIe">
+                                <rect key="frame" x="20" y="766" width="353" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vdg-Xt-2Mb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AAd-iM-V1f">
+                                <rect key="frame" x="0.0" y="60" width="393" height="706"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="woo-Id-sxj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9d5-md-EIe" firstAttribute="top" secondItem="AAd-iM-V1f" secondAttribute="bottom" id="1Mu-Nv-IDf"/>
+                            <constraint firstItem="woo-Id-sxj" firstAttribute="trailing" secondItem="9d5-md-EIe" secondAttribute="trailing" constant="20" id="5d0-wr-J0W"/>
+                            <constraint firstItem="AAd-iM-V1f" firstAttribute="top" secondItem="bde-GQ-wVf" secondAttribute="bottom" id="Bz5-zh-6BR"/>
+                            <constraint firstItem="woo-Id-sxj" firstAttribute="trailing" secondItem="bde-GQ-wVf" secondAttribute="trailing" id="H63-ds-dcT"/>
+                            <constraint firstItem="AAd-iM-V1f" firstAttribute="leading" secondItem="woo-Id-sxj" secondAttribute="leading" id="JQb-H4-OhQ"/>
+                            <constraint firstItem="9d5-md-EIe" firstAttribute="leading" secondItem="woo-Id-sxj" secondAttribute="leading" constant="20" id="O07-6k-hFC"/>
+                            <constraint firstItem="woo-Id-sxj" firstAttribute="bottom" secondItem="9d5-md-EIe" secondAttribute="bottom" constant="12" id="Q0c-5P-eDC"/>
+                            <constraint firstItem="bde-GQ-wVf" firstAttribute="leading" secondItem="woo-Id-sxj" secondAttribute="leading" id="SFj-LQ-jpv"/>
+                            <constraint firstItem="bde-GQ-wVf" firstAttribute="top" secondItem="woo-Id-sxj" secondAttribute="top" id="U45-IJ-EJv"/>
+                            <constraint firstItem="woo-Id-sxj" firstAttribute="trailing" secondItem="AAd-iM-V1f" secondAttribute="trailing" id="fxG-Si-udd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYv-Rw-9Mg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
