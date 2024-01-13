@@ -36,10 +36,6 @@ struct Chat {
     let user: User
     let date: String
     let message: String
-    
-//    var formatDate: String {
-//
-//    }
 }
 
 
@@ -269,8 +265,8 @@ extension ChattingListViewController: UITableViewDelegate, UITableViewDataSource
         cell.chatroomMessageLabel.textColor = .darkGray
         cell.chatroomMessageLabel.font = .systemFont(ofSize: 14)
         
-        cell.chatroomDateLabel.text = mockChatList[indexPath.row].chatList.last?.date
-        cell.chatroomDateLabel.textColor = .darkGray
+        cell.chatroomDateLabel.text = convertDateFormat(inputDate: mockChatList[indexPath.row].chatList.last?.date ?? "")
+        cell.chatroomDateLabel.textColor = .lightGray
         cell.chatroomDateLabel.font = .systemFont(ofSize: 13)
         
         return cell
@@ -286,6 +282,17 @@ extension ChattingListViewController: UITableViewDelegate, UITableViewDataSource
         
         let xib = UINib(nibName: "ChattingListTableViewCell", bundle: nil)
         chatTableView.register(xib, forCellReuseIdentifier: "ChattingListTableViewCell")
+    }
+    
+    // 날짜 포맷팅
+    func convertDateFormat(inputDate: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        guard let date = dateFormatter.date(from: inputDate) else { return inputDate }
+        
+        dateFormatter.dateFormat = "yy.MM.dd"
+        let outputDate = dateFormatter.string(from: date)
+        return outputDate
     }
     
     
