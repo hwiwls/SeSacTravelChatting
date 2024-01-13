@@ -67,6 +67,7 @@ extension ChattingListViewController: UITableViewDelegate, UITableViewDataSource
         
         let vc = sb.instantiateViewController(withIdentifier: "ChattingViewController") as! ChattingViewController
         
+        vc.chatroomTitle = mockChatList[indexPath.row].chatroomName
         vc.chat = mockChatList[indexPath.row]
         
         navigationController?.pushViewController(vc, animated: true)

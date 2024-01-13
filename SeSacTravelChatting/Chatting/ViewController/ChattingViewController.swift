@@ -12,6 +12,8 @@ class ChattingViewController: UIViewController {
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var messageTextField: UITextField!
     
+    var chatroomTitle: String = "채팅방 이름"
+    
     var chat: ChatRoom = ChatRoom(chatroomId: 1 ,
                               chatroomImage: [User.simsim.profileImage],
                               chatroomName: User.simsim.rawValue, chatList: [
@@ -30,7 +32,7 @@ class ChattingViewController: UIViewController {
 
 extension ChattingViewController {
     func configView() {
-        navigationItem.title = "TRAVEL TALK"
+        navigationItem.title = chatroomTitle
         
         messageTextField.backgroundColor = .lightGray
         messageTextField.placeholder = "메세지를 입력하세요"
