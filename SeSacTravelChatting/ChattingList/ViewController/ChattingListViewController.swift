@@ -9,13 +9,13 @@ import UIKit
 
 class ChattingListViewController: UIViewController {
     
-    @IBOutlet weak var chatTableView: UITableView!
+    @IBOutlet weak var chatListTableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        chatTableView.backgroundColor = .white
+        chatListTableView.backgroundColor = .white
         configView()
         configTableView()
     }
@@ -37,6 +37,8 @@ extension ChattingListViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChattingListTableViewCell", for: indexPath) as! ChattingListTableViewCell
+        
+        cell.selectionStyle = .none
         
         cell.chatroomImageView.image = UIImage(named: mockChatList[indexPath.row].chatroomImage.last ?? "star.fill")
         cell.chatroomImageView.contentMode = .scaleAspectFit
@@ -60,12 +62,22 @@ extension ChattingListViewController: UITableViewDelegate, UITableViewDataSource
         return 80
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = sb.instantiateViewController(withIdentifier: "ChattingViewController") as! ChattingViewController
+        
+        vc.chat = mockChatList[indexPath.row]
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func configTableView() {
-        chatTableView.delegate = self
-        chatTableView.dataSource = self
+        chatListTableView.delegate = self
+        chatListTableView.dataSource = self
         
         let xib = UINib(nibName: "ChattingListTableViewCell", bundle: nil)
-        chatTableView.register(xib, forCellReuseIdentifier: "ChattingListTableViewCell")
+        chatListTableView.register(xib, forCellReuseIdentifier: "ChattingListTableViewCell")
     }
     
     // 날짜 포맷팅

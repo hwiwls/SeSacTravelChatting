@@ -54,6 +54,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="senderMessageLabel" destination="ruC-4f-0Kt" id="JHh-ed-1qc"/>
+                <outlet property="senderNameLabel" destination="Fcb-vC-b9D" id="QNd-Lh-TFD"/>
+                <outlet property="senderProfileImageView" destination="Pdg-J6-fxw" id="6Un-J1-rbS"/>
+                <outlet property="senderTimeLabel" destination="8Ro-xU-b5b" id="088-UU-gDB"/>
+            </connections>
             <point key="canvasLocation" x="192.36641221374046" y="50.70422535211268"/>
         </tableViewCell>
     </objects>

@@ -55,7 +55,7 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="chatTableView" destination="GbZ-7W-UrC" id="cJk-30-4RA"/>
+                        <outlet property="chatListTableView" destination="GbZ-7W-UrC" id="cJk-30-4RA"/>
                         <outlet property="searchTextField" destination="2zH-46-MTu" id="xD5-9y-lMx"/>
                     </connections>
                 </viewController>
@@ -86,7 +86,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AAd-iM-V1f">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AAd-iM-V1f">
                                 <rect key="frame" x="0.0" y="60" width="393" height="706"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -106,6 +106,10 @@
                             <constraint firstItem="woo-Id-sxj" firstAttribute="trailing" secondItem="AAd-iM-V1f" secondAttribute="trailing" id="fxG-Si-udd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chatTableView" destination="AAd-iM-V1f" id="fCI-GT-2xQ"/>
+                        <outlet property="messageTextField" destination="9d5-md-EIe" id="Pik-xK-wuZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYv-Rw-9Mg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

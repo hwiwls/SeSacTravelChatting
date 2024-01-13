@@ -35,4 +35,6 @@ struct Chat {
     let user: User
     let date: String
     let message: String
+    
+    
 }
