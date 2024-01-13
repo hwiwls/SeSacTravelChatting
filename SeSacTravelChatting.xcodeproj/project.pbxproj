@@ -12,6 +12,9 @@
 		2E12C8172B52C4DF002F99DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C8152B52C4DF002F99DC /* Main.storyboard */; };
 		2E12C8192B52C4E1002F99DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C8182B52C4E1002F99DC /* Assets.xcassets */; };
 		2E12C81C2B52C4E1002F99DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C81A2B52C4E1002F99DC /* LaunchScreen.storyboard */; };
+		2E12C8272B52CD3B002F99DC /* ChattingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C8262B52CD3B002F99DC /* ChattingListViewController.swift */; };
+		2E12C82A2B52CD4D002F99DC /* ChattingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C8282B52CD4D002F99DC /* ChattingListTableViewCell.swift */; };
+		2E12C82B2B52CD4D002F99DC /* ChattingListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C8292B52CD4D002F99DC /* ChattingListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2E12C8182B52C4E1002F99DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E12C81B2B52C4E1002F99DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E12C81D2B52C4E1002F99DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E12C8262B52CD3B002F99DC /* ChattingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingListViewController.swift; sourceTree = "<group>"; };
+		2E12C8282B52CD4D002F99DC /* ChattingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingListTableViewCell.swift; sourceTree = "<group>"; };
+		2E12C8292B52CD4D002F99DC /* ChattingListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				2E12C8182B52C4E1002F99DC /* Assets.xcassets */,
 				2E12C81A2B52C4E1002F99DC /* LaunchScreen.storyboard */,
 				2E12C81D2B52C4E1002F99DC /* Info.plist */,
+				2E12C8262B52CD3B002F99DC /* ChattingListViewController.swift */,
+				2E12C8282B52CD4D002F99DC /* ChattingListTableViewCell.swift */,
+				2E12C8292B52CD4D002F99DC /* ChattingListTableViewCell.xib */,
 			);
 			path = SeSacTravelChatting;
 			sourceTree = "<group>";
@@ -149,6 +158,7 @@
 				2E12C81C2B52C4E1002F99DC /* LaunchScreen.storyboard in Resources */,
 				2E12C8192B52C4E1002F99DC /* Assets.xcassets in Resources */,
 				2E12C8172B52C4DF002F99DC /* Main.storyboard in Resources */,
+				2E12C82B2B52CD4D002F99DC /* ChattingListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E12C8102B52C4DF002F99DC /* AppDelegate.swift in Sources */,
+				2E12C8272B52CD3B002F99DC /* ChattingListViewController.swift in Sources */,
 				2E12C8122B52C4DF002F99DC /* SceneDelegate.swift in Sources */,
+				2E12C82A2B52CD4D002F99DC /* ChattingListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
