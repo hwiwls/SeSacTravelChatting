@@ -25,7 +25,6 @@ class ChattingViewController: UIViewController {
         chatTableView.backgroundColor = .white
         configView()
         configTableView()
-        print(chat.chatList)
     }
 }
 
